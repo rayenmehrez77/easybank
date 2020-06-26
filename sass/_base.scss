@@ -1,0 +1,26 @@
+*::before, 
+*::after, 
+* {
+    box-sizing: inherit; 
+    padding: 0; 
+    margin: 0;
+} 
+
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+} 
+
+
+body {
+    font-family: 'Public-Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 1.8rem;
+} 
+
+.container {
+    display: grid; 
+    grid-template-rows: 8rem 92vh repeat(3, min-content); 
+    // grid-template-columns: 1fr repeat(8, minmax(14rem, 1fr)) 1fr;
+}

@@ -1,0 +1,40 @@
+.header {
+    background-color: #fff;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    
+    &__logo {
+        grid-column: col-start / col-end 1;
+    } 
+
+    &__items {
+        display: flex; 
+        list-style: none;
+    } 
+
+    &__link {
+        margin-right: 2rem;
+        text-decoration: none; 
+        color: var(--main-color);
+    } 
+
+}  
+
+.btn {
+    cursor: pointer;
+    border: none; 
+    padding: 1.5rem 3rem; 
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%),  hsl(192, 70%, 51%)); 
+    border-radius: 3rem; 
+    color: #fff; 
+    font-size: 1.6rem;
+    &:focus {
+        outline: none;
+    } 
+
+    &:active {
+        transform: translateY(1px);
+    }
+}

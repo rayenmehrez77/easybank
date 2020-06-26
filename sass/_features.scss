@@ -1,0 +1,42 @@
+.feature-section {
+    height: 70rem;
+    background-color: rgb(243, 243, 243);
+    grid-row: 3 / 4; 
+    grid-column: 1 / -1;
+    padding: 6rem;
+    display: grid; 
+    grid-template-rows: repeat(2, min-content); 
+    grid-row-gap: 7rem;
+
+
+    &__details {
+        grid-column: 1 / -1; 
+        display: grid; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 5rem;
+    } 
+
+}
+
+.features {
+    width: 80%; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 5rem; 
+    justify-content: center; 
+    align-items: flex-start;
+    
+}
+
+.feature {
+    display: grid; 
+    grid-row-gap: 1rem; 
+    align-items: center;
+
+    &__title {
+        font-size: 1.8rem;
+    }
+
+}

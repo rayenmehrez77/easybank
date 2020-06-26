@@ -1,0 +1,36 @@
+.footer {
+    background-color: rgb(92, 115, 247); 
+    grid-column: 1 / -1;
+    padding: 9rem;
+
+    display: grid; 
+    align-items: center; 
+    justify-content: center;
+    grid-template-columns: 30rem 20rem 20rem 1fr;
+
+
+    &__box1 {
+        display: grid; 
+        grid-template-rows: repeat(2, min-content); 
+        grid-row-gap: 2rem;
+        justify-self: flex-start;
+    } 
+
+    &__box3 {
+        padding: 2rem;
+
+        &-list {
+            list-style: none;
+        }
+    }
+
+    
+    &__box4 {
+        display: grid; 
+        grid-template-rows: repeat(2, min-content); 
+        grid-row-gap: 2rem; 
+        align-self: center; 
+        justify-self: flex-end; 
+        width: 20rem;
+    }
+}
